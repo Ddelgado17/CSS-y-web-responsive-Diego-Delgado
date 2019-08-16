@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'DancingScript';
+  src: url('Dancing Script.ttf');
+}
+body{
+  font-family: DancingScript;
+  background-color: #02010a;
+  width: 99%;
+}
+header{
+  background-color: #5b7989;
+  border-radius: 10px;
+  text-align: right;
+  text-shadow: 2px 2px #02010a;
+}
+header a{
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+header h1{
+  text-align: left;
+}
+a:hover{
+  color: yellow;
+}
+
+.inicio{
+  padding: 5px;
+  background-color: #82c3a6;
+  border-radius: 10px;
+}
+.imagen1{
+  display: block;
+  margin: auto;
+  width: 90%;
+  box-shadow: 2px 2px 2px #02010a;
+}
+.contenido {
+  border: 1px;
+  width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+  background-color: #d5c75f;
+  border-radius: 10px;
+}
+.imagen2{
+  margin: 5px;
+  width: 90%;
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+.imagen3{
+  margin: 5px;
+  width: 90%;
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+@keyframes imagen2-rotacion{
+	0%{
+		transform: rotate(0deg);
+	}
+  59%{
+    transform: rotate(10deg);
+  }
+	100%{
+		transform: rotate(0deg);
+	}
+}
+.c1:hover img{
+	animation-name: imagen2-rotacion;
+	animation-duration: 1s;
+}
+@keyframes imagen3-translate{
+	0%{
+		transform: translate(0px 0px);
+	}
+  59%{
+    transform: translate(20px, -5px);
+  }
+	100%{
+		transform:  translate(0px 0px);
+	}
+}
+.c2:hover img{
+	animation-name: imagen3-translate;
+	animation-duration: 1s;
+}
+.c1{
+  text-align: center;
+	width: 50%;
+  background-color: #d5c75f;
+  border-radius: 10px;
+}
+.c2{
+  text-align: center;
+	width: 50%;
+  background-color: #d5c75f;
+  border-radius: 10px;
+}
+@media all and (max-width: 901px) {
+	.c1 {
+		width: 100%;
+		order: 1;
+	}
+	.c2 {
+		width: 100%;
+		order: 2;
+	}
+}
+
+@media all and (max-width: 900px) and (min-width: 10px) {
+	.c1 {
+		width: 100%;
+	}
+	.c2 {
+		width: 100%;
+	}
+}
+#pie{
+  width: 100%;
+  background-color: #C6d5c5;
+  border-radius: 10px;
+}
+.foot h1{
+  text-align: center;
+}
+.foot {
+  border: 1px;
+  width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.cc1{
+  text-align: center;
+  padding: 5px;
+	width: 24%;
+  background-color: #C6d5c5;
+  border-radius: 10px;
+}
+.cc2{
+  padding: 5px;
+  text-align: center;
+	width: 24%;
+  background-color: #C6d5c5;
+  border-radius: 10px;
+}
+.cc3{
+  padding: 5px;
+  text-align: center;
+	width: 24%;
+  background-color: #C6d5c5;
+  border-radius: 10px;
+}
+.cc4{
+  padding: 5px;
+  text-align: center;
+	width: 24%;
+  background-color: #C6d5c5;
+  border-radius: 10px;
+}
+@media all and (max-width: 901px) {
+	.cc1 {
+		width: 100%;
+		order: 1;
+	}
+	.cc2 {
+		width: 100%;
+		order: 2;
+	}
+  .cc3 {
+    width: 100%;
+    order: 3;
+  }
+  .cc4 {
+    width: 100%;
+    order: 4;
+  }
+}
+
+@media all and (max-width: 900px) and (min-width: 10px) {
+	.cc1 {
+		width: 100%;
+	}
+	.cc2 {
+		width: 100%;
+	}
+  .cc3 {
+    width: 100%;
+  }
+  .cc4 {
+    width: 100%;
+  }
+}
+@keyframes slidein {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+#animacion{
+  animation-name: slidein;
+	animation-duration: 1s;
+	-webkit-animation-delay: 0.1s;
+	-moz-animation-delay:0.1s;
+	-o-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
